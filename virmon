@@ -1,5 +1,5 @@
 #!/bin/sh
-# Testing out virtual monitors
+# Spliting monitor into 2 virtual monitors
 if [ -z "$(xrandr --listactivemonitors | grep 'HDMI-0~0')" ]; then
     xrandr --setmonitor HDMI-0~0 1280/205x1080/173+0+0 HDMI-0
     xrandr --setmonitor HDMI-0~1 1280/205x1080/173+1280+0 none
